@@ -1,0 +1,18 @@
+I wrote this smiley face as part of my mood reader -- 
+(http://i8news.uterm.org/mood/twitter-mood-reader/#MrTweet), then separate it
+out as I needed it in several pages. So here it is as a jquery plugin which 
+needs flot of course.
+
+How to use it:
+1) you have jquery, flot and this plugin loaded
+2) have a div holder, like this (the id has to be smileyholder right now):
+<div id="smileyholder" style="width:450px; height:480px; position:fixed"></div>
+3) call:
+    $.smiley(1.0);  //draw a face
+3b) if you want to animate the change of the smiley, call something like:
+    //0.1 is the change per step, 10 is the number of steps
+    $.animateSmiley(0.1, 10); 
+
+TODO:
+1) wrap the API in a deeper level
+2) give the option to config the target id, change the color etc.
